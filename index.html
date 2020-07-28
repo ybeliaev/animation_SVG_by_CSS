@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/modern-css-reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Animation SVG with CSS.</title>
 </head>
 <body>
@@ -41,9 +44,25 @@
                     src=&quot;picture.png&quot;&gt;
                 &lt;/object&gt;
             </code></pre>
+            <p>Работают скрипты, взаимодействие, анимация — если они описаны внутри SVG.</p>
+            <p>Между тегами object можно вставить фолбэк, который покажется, если браузер не говорит на SVG.</p>
+            <p>Этот способ подходит, когда вам нужно вставить какую-то интерактивную графику: игрушки, графики и всякое сложное. </p>
         </ul>
         
-        <ul></ul>
+        <ul>
+            <h3>Вставлять на страницу, как любые другие теги</h3>
+            <pre><code>
+                &lt;h1&gt;Квадрат&lt;/h1&gt;
+                &lt;svg
+                width=&quot;20&quot;
+                height=&quot;20&quot;&gt;
+                    &lt;rect fill=&quot;#fc0&quot;
+                    width=&quot;20&quot;
+                    height=&quot;20&quot;/&gt;
+                &lt;/svg&gt;
+            </code></pre>
+        </ul>
     </ol>
+    <a href="https://www.sarasoueidan.com/tags/svg/">Статьи Сары Суайдан</a>
 </body>
 </html>

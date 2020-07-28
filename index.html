@@ -6,6 +6,44 @@
     <title>Animation SVG with CSS.</title>
 </head>
 <body>
-    
+    <h1>О масштабируемой векторной графике(SVG)</h1>
+    <h2>Как правильно вставлять SVG</h2>
+    <ol>
+        <ul>
+            <h3>Вставка картинкой.</h3>
+            <pre>
+                <code>
+                &lt;img
+                src=&quot;picture.svg&quot;
+                alt=&quot;За стеклом&quot;&gt;
+                </code>
+            </pre>
+        </ul>
+        <ul>
+            <h3>Фоновая картинка в CSS.</h3>
+            <pre>
+                <code>
+                .picture {
+                    background-image:
+                        url(picture.svg);
+                     }
+                </code>
+            </pre>
+        </ul>
+        <strong>Этот способ подходит для оформительской графики, которой не нужно взаимодействие: фоны, иконки и другая мелочь.</strong>
+        <ul>
+            <h3>Третий способ, через object</h3>
+            <pre><code>
+                &lt;object
+                type=&quot;image/svg+xml&quot;
+                data=&quot;picture.svg&quot;&gt;
+                &lt;img
+                    src=&quot;picture.png&quot;&gt;
+                &lt;/object&gt;
+            </code></pre>
+        </ul>
+        
+        <ul></ul>
+    </ol>
 </body>
 </html>
